@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>Prettig Kerstfeest</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<script type="text/javascript">
+		document.documentElement.className += ' js-on';
+	</script>
+</head>
+<body>
+	<article>
+		<p>O DENNEBOOM, O DENNEBOOM, WAT Z<span>I</span>JN UW TAK<span>K</span>EN WONDERSCHOON. IK HEB U LAATST IN 'T BOS ZIEN STAAN, TOEN ZATER ER GEEN KAARSJES AAN. O DENNEBOOM, O DENNEBOOM, WAT ZIJN U<span>W</span> TAKK<span>E</span>N WO<span>N</span>DER<span>S</span>CHOON. JINGLEBELLS, <span>J</span>INGL<span>E</span>BELLS, HOOR JE OVERAL. JIJ EN IK GAAN SAMEN IN EEN SLEE LANGS BERG EN DAL. HEERLIJK MET Z'N TWEE IN EEN OPEN ARRENSLEE. M<span>E</span>NSEN ZI<span>E</span>N O<span>N</span>S GAAN, BLIJVEN EVEN STAAN. STEL JE DAT EENS VOOR, DE BESNEEUWDE BOSSEN DOOR. LANGZAAM, LANGZAAM, LANGZAAM, NIET TE SNEL, OP HET RITME O<span>F</span> DE BEL. J<span>I</span>NGLEBELLS, <span>J</span>I<span>N</span>GLEB<span>E</span>LLS, HOOR JE OVERAL. JIJ EN IK GAAN SAMEN IN EEN SLEE LANGS BERG EN DAL. O DENNEBOOM, O DENNEBOOM, WAT ZIJN UW TAK<span>KE</span>N WONDE<span>R</span>SCHOON. IK HEB U LAAT<span>S</span>T IN '<span>T</span> BOS ZIEN STAAN, TOEN ZATER ER GEEN KAARSJES AAN. O DENNEBOOM, O DENNEBOOM, WAT ZIJN UW TAKKEN WONDERSCHOON.</p>
+	</article>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>
+		$('p').fadeIn(1000,function(){
+		//	copySpans();
+		//	fadeInEm();
+		//	var s = document.getElementsByTagName('span');
+		//	console.log(s)
+		//	for (i=0;i<=s.length;i++){
+		//	for ( var i = -1; ++i < s;){
+				setTimeout($('span').addClass('active'),1500);
+		//	}
+		});
+		var copySpans = function(){
+			var st = $('span');
+			$('span').each(function(){
+				var ot = $(this).text();
+				$(this).after('<em>'+ot+'</em>');
+			});
+		},	fadeInEm = function(){
+			function showItem(el){
+			  if($(el).nextAll("em").size() == 1) //stop the recursion?
+			      $(el).fadeIn(1000, function() {showItem($(el).nextAll("em"))});
+			  else
+			      $(el).fadeIn(1000);      
+			  }
+
+			$(document).ready(function(){
+			   //recursion
+			  //  $("li").css("display","none"); //hide
+			    showItem("em:first");
+			});
+		}
+	
+	</script>
+</body>
+</html>

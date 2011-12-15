@@ -1,0 +1,17 @@
+body { 
+	background-color:#fff;
+	color:#ccc;
+	font-family:helvetica;
+	font-size:1em;
+	margin:0 auto;
+	width: 33em;
+}
+
+.js-on article p,
+article em {
+	display:none;
+}
+span.active, em {
+	color: red;
+	font-weight:bold;
+}
