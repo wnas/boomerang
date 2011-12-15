@@ -1,13 +1,7 @@
 	$('p').fadeIn(2000,function(){
 			setData();
 			
-		//	fadeInEm();
-		//	var s = document.getElementsByTagName('span');
-		//	console.log(s)
-		//	for (i=0;i<=s.length;i++){
-		//	for ( var i = -1; ++i < s;){
-				//setTimeout($('span').addClass('active'),1500);
-		//	}
+
 		});
 		var setData = function(){
 			//var st = $('span');

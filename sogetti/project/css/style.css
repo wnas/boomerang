@@ -4,12 +4,13 @@ body {
 	font-family:helvetica;
 	font-size:1em;
 	margin:0 auto;
-	width: 40em;
+	width: 100%;
+	max-width:40em;
 	letter-spacing:.2em;
 }
 
-.js-on article p,
-article em {
+.js-on div p,
+div em {
 	display:none;
 }
 span.active, em {
