@@ -6,10 +6,10 @@ body {
 	margin:0 auto;
 	
 	letter-spacing:.1955em;
-
+	background:url('img/christmas-border.png') top center no-repeat;
 	
 	width: 100%;
-	max-width:900px;	
+		
 }
 div {
 /*	background:url('img/bg.jpg') no-repeat 0 5px;
@@ -19,6 +19,9 @@ div {
 	background-size: cover;*/
 	font-size:2.635em;
 	line-height:1.47;
+	max-width:900px;
+	margin:0 auto;
+	padding-top:150px;
 }
 
 .js-on div p,
