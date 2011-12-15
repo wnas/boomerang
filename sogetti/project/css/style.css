@@ -4,7 +4,8 @@ body {
 	font-family:helvetica;
 	font-size:1em;
 	margin:0 auto;
-	width: 33em;
+	width: 40em;
+	letter-spacing:.2em;
 }
 
 .js-on article p,

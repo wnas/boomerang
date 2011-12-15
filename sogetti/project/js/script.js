@@ -1,4 +1,4 @@
-	$('p').fadeIn(1000,function(){
+	$('p').fadeIn(2000,function(){
 			setData();
 			
 		//	fadeInEm();
@@ -22,7 +22,7 @@
 			});
 		},	dostuff = function(span){
 			var time = span.attr('data-t');
-			time = time*100;
+			time = time*500;
 		//	console.log(typeof time);
 		//	console.log(span.attr('data-t'));
 			setTimeout( function(){span.addClass('active');},time);
